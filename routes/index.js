@@ -12,5 +12,8 @@ router.get("/cssgrid", function (req, res, next) {
 router.get("/cssgridpractice", function (req, res, next) {
   res.render("cssgridpractice", { title: "CSS GRID - Practica" });
 });
+router.get("/testimonials", function (req, res, next) {
+  res.render("testimonials", { title: "Fontermentor.io - Testimonials" });
+});
 
 module.exports = router;
