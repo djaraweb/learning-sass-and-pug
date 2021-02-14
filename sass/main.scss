@@ -1,24 +1,3 @@
-*,
-::before,
-::after {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-:root {
-  font-size: 62.5%;
-  font-family: "Lucida Grande", Helvetica, Arial, sans-serif;
-}
-
-a {
-  text-decoration: none;
-}
-ul,
-li {
-  list-style: none;
-}
-
 .output-error {
   margin: 40px;
   h1 {
@@ -32,39 +11,17 @@ li {
   }
 }
 
-.home-container {
-  display: flex;
-}
+// .home-container {
+//   display: flex;
+// }
 
-nav {
-  font-size: 14px;
-  height: 100vh;
-  width: 200px;
-  span {
-    display: block;
-    padding: 10px 0;
-    text-align: center;
-    font-weight: bold;
-  }
-  ul {
-    margin-top: 5px;
-    li {
-      padding: 2px 8px;
-      a {
-        display: block;
-        font-weight: bold;
-        color: gray;
-      }
-    }
-  }
-}
-
-.wrapper {
-  width: 100%;
-}
+// .wrapper {
+//   width: 100%;
+// }
 
 /* Import Styles */
-
-@import "./challengers/_cssgrid";
-@import "./challengers/_cssgridpractice";
-@import "./challengers/_testimonials";
+@import "./_root";
+@import "./_sidebar-menu";
+// @import "./challengers/_cssgrid";
+// @import "./challengers/_cssgridpractice";
+// @import "./challengers/_testimonials";

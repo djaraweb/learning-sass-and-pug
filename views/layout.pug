@@ -2,18 +2,35 @@ doctype html
 html
   head
     title= title
+    link(rel="stylesheet", href="https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css" )
     link(rel='stylesheet', href='/stylesheets/style.css')
   body
-    div(class="home-container")
-      nav(class="home-menu")
-        span Menu
-        ul
-          li
-            a(href="/cssgrid") CssGrid
-          li
-            a(href="/cssgridpractice") CssGrid-Practice
-          li
-            a(href="/testimonials") Frontmentor-Testimonials
+    div(class="navbar__menu")
+      nav(class="nav")
+        div
+          ul(class="nav__list")
+            li(class="nav__item")
+              a(href="/" class="nav__link nav__link-active")
+                i(class="bx bx-home-alt nav__icon")
+                span(class="nav__text") Dashboard
+            li(class="nav__item")
+              a(href="#" class="nav__link")
+                i(class="bx bx-grid-alt nav__icon")
+                span(class="nav__text") Css-Grid
+                i(class="bx bxs-chevron-right collapse__icon-link")
+              ul(class="dropdown__menu")
+                li(class="dropdown__item")
+                  a(href="/cssgrid" class="nav__link")
+                    i(class="bx bx-circle dropdown__icon")
+                    span(class="nav__text") Conceptos
+                li(class="dropdown__item")
+                  a(href="/cssgridpractice" class="nav__link")
+                    i(class="bx bx-circle dropdown__icon")
+                    span(class="nav__text") Practica
+        a(href="#" class="nav__link")
+          i(class="bx bx-log-out-circle nav__icon")
+          span(class="nav__text") Log Out
 
-      div(class="wrapper")          
-        block content
+    block content
+  script(src="./javascripts/menu.js")
+
