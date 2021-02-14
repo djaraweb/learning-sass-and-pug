@@ -18,3 +18,52 @@ ul,
 li {
   list-style: none;
 }
+
+.output-error {
+  margin: 40px;
+  h1 {
+    font-size: 4rem;
+  }
+  h2 {
+    font-size: 3rem;
+  }
+  pre {
+    font-size: 1.5rem;
+  }
+}
+
+.home-container {
+  display: flex;
+}
+
+nav {
+  font-size: 14px;
+  height: 100vh;
+  width: 200px;
+  span {
+    display: block;
+    padding: 10px 0;
+    text-align: center;
+    font-weight: bold;
+  }
+  ul {
+    margin-top: 5px;
+    li {
+      padding: 2px 8px;
+      a {
+        display: block;
+        font-weight: bold;
+        color: gray;
+      }
+    }
+  }
+}
+
+.wrapper {
+  width: 100%;
+}
+
+/* Import Styles */
+
+@import "./challengers/_cssgrid";
+@import "./challengers/_cssgridpractice";

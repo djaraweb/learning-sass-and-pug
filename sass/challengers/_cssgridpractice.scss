@@ -1,0 +1,58 @@
+/* Practica CSS GRID - Responsive */
+.gr-contenedor {
+  width: 90%;
+  margin: auto;
+  max-width: 1000px;
+  border: 10px solid #000;
+
+  font-size: 50px;
+  line-height: 50px;
+  text-align: center;
+
+  display: grid;
+  gap: 15px;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(4, auto);
+  grid-template-areas:
+    "header   header    header"
+    "sidebar-left container sidebar-right"
+    "sidebar-left widget    sidebar-right"
+    "footer   footer    footer";
+
+  div {
+    display: block;
+    padding: 20px;
+    text-align: center;
+    color: #fff;
+    background-color: #2f89fc;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.25);
+  }
+
+  .header {
+    /* forma 01 */
+    grid-column: header;
+    background-color: #f39f3e;
+
+    /* grid-area: header; */
+  }
+
+  .sidebar-left {
+    /* forma 02 */
+    grid-column: sidebar-left;
+    grid-row: sidebar-left;
+    background-color: #96918c;
+  }
+
+  .sidebar-right {
+    /* forma 02 */
+    grid-column: sidebar-right;
+    grid-row: sidebar-right;
+    background-color: #96918c;
+  }
+
+  .footer {
+    grid-column: footer;
+    background-color: #181717;
+    color: #fff;
+  }
+}
